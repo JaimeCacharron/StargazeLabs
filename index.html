@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stargaze Ventures | CPG Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;600;800&family=Bodoni+Moda:opsz,wght@6..96,400..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cosmic-white: #fcfcfc;
+            --deep-teal: #172d3a;
+            --space-blue-grey: #597983;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--deep-teal);
+            color: var(--cosmic-white);
+            background-image: 
+                radial-gradient(circle at 50% -20%, rgba(89, 121, 131, 0.2) 0%, transparent 60%),
+                radial-gradient(circle at 100% 100%, rgba(252, 252, 252, 0.03) 0%, transparent 40%);
+            background-attachment: fixed;
+            -webkit-font-smoothing: antialiased;
+        }
+        .heading-font {
+            font-family: 'Outfit', sans-serif;
+        }
+        .serif-font {
+            font-family: 'Bodoni Moda', serif;
+        }
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .glass {
+            background: rgba(23, 45, 58, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(252, 252, 252, 0.08);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--deep-teal);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--space-blue-grey);
+            border-radius: 10px;
+        }
+        /* Strict anti-italic enforcement */
+        * {
+            font-style: normal !important;
+        }
+
+        /* Markdown Styling */
+        .prose h1, .prose h2, .prose h3 {
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #597983;
+            font-size: 0.75rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        .prose p {
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
+            color: rgba(252, 252, 252, 0.85);
+        }
+        .prose ul {
+            margin-bottom: 1.5rem;
+            list-style: none;
+            padding-left: 0;
+        }
+        .prose li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: rgba(252, 252, 252, 0.85);
+        }
+        .prose li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #597983;
+        }
+        .prose strong {
+            color: #fcfcfc;
+            font-weight: 700;
+        }
+        .prose hr {
+            border: 0;
+            border-top: 1px solid rgba(252, 252, 252, 0.1);
+            margin: 2rem 0;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "marked": "https://esm.sh/marked@^15.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
